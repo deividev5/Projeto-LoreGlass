@@ -1,0 +1,34 @@
+<!--Seção para detalhes do produto-->
+<section class="product__container">
+
+    <!--parte da imagem do produto-->
+    <div class="product-image__container">
+        <img [src]="produto?.imagem" alt="">
+    </div>
+
+    <!--Descrição do produto usando propery binding-->
+    <div class="product-description__container">
+        <!--Nome do produto usando propery binding-->
+        <h2 class="product_name">{{produto?.descricao}}</h2>
+
+        <!--preço do produto  usando propery binding-->
+        <h3 class="product__price">{{produto?.preco | currency:"BRL"}}</h3>
+        <p>Estoque disponível:</p>
+
+        <!--Quantidade do produto  usando propery binding-->
+        <label>
+            quantidade:
+            <input type="number" [(ngModel)] = "quantidade" min="1">
+            unidade(s)
+        </label>
+
+        <!--estoque do produto  usando propery binding-->
+        <p class="product__avaiability">
+            {{produto?.quantidadeEstoque}} em estoque
+        </p>
+
+        <!--botão para adicionar no carrinho executando a função de adicionar ao carrinho-->
+        <button (click)="adicionarAoCarrinho()">Adicionar no carrinho</button>
+    </div>
+
+</section>

@@ -1,0 +1,54 @@
+<!-- Título do formulário de contato -->
+<h2 class="contact__title">Entre em contato</h2>
+
+<!-- Seção que contém o formulário -->
+<section class="contact__container">
+  <!-- Formulário com FormGroup do Angular para validação reativa -->
+  <form [formGroup]="contactForm" class="contact-form" (ngSubmit)="onSubmit()">
+  
+    <!-- Campo para o nome do usuário, com validação -->
+    <input type="text" placeholder="Digite o seu nome" formControlName="nome">
+    <!-- Exibe mensagem de erro se o campo for inválido e tocado -->
+    <div *ngIf="contactForm.get('nome')?.invalid && contactForm.get('nome')?.touched">
+      <small class="error">O nome é obrigatório e deve ter no mínimo 5 caracteres</small>
+    </div>
+  
+    <!-- Campo para o assunto, com validação -->
+    <input type="text" placeholder="Digite o assunto" formControlName="assunto">
+    <!-- Exibe mensagem de erro se o campo for inválido e tocado -->
+    <div *ngIf="contactForm.get('assunto')?.invalid && contactForm.get('assunto')?.touched">
+      <small class="error">O assunto é obrigatório e deve ter no mínimo 10 caracteres</small>
+    </div>
+  
+    <!-- Campo para telefone com máscara de formato automático -->
+    <input type="tel" placeholder="(00) 0 0000-0000" formControlName="telefone" mask="(00) 0 0000-0000">
+    <!-- Exibe mensagem de erro se o campo for inválido e tocado -->
+    <div *ngIf="contactForm.get('telefone')?.invalid && contactForm.get('telefone')?.touched">
+      <small class="error">Informe um telefone válido</small>
+    </div>
+  
+    <!-- Campo para e-mail, com validação de formato -->
+    <input type="email" placeholder="Digite seu e-mail" formControlName="email">
+    <!-- Exibe mensagem de erro se o campo for inválido e tocado -->
+    <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+      <small class="error">Informe um e-mail válido</small>
+    </div>
+  
+    <!-- Campo para mensagem com limite de caracteres -->
+    <textarea placeholder="Descreva o assunto" maxlength="300" formControlName="mensagem"></textarea>
+    <!-- Exibe mensagem de erro se o campo for inválido e tocado -->
+    <div *ngIf="contactForm.get('mensagem')?.invalid && contactForm.get('mensagem')?.touched">
+      <small class="error">A mensagem deve ter no mínimo 20 caracteres</small>
+    </div>
+  
+    <!-- Botão de envio, desabilitado até o formulário ser válido -->
+    <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+  </form>
+
+  <address>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22024.106563067184!2d-38.99326056546095!3d-12.625109560258398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x715bdb48d455b11%3A0xd86a51cbae8b473a!2sMuritiba%2C%20BA!5e0!3m2!1spt-BR!2sbr!4v1741194211687!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>
+      Muritiba-BA, 44340-000
+    </p>
+  </address>
+</section>

@@ -5,11 +5,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed; /* Torna o header fixo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding-top: 160px; /* Aumenta o espaço para separar mais o header do conteúdo principal */
+    overflow-y: auto; /* Permite rolagem vertical */
 }
 
 header h1 {
     font-size: 2rem;
     color: #333;
+    margin: 0;
 }
 
 header .brand-name {
@@ -42,9 +55,14 @@ nav ul li a i {
     margin-right: 5px;
 }
 
+a.Titulo{
+    text-decoration: none;
+}
+
 form {
     display: flex;
     align-items: center;
+    margin-left: 40px; /* Separa ainda mais a barra de pesquisa do canto */
 }
 
 form input {
@@ -67,4 +85,56 @@ form button {
 
 form button:hover {
     background-color: #0056b3;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilização do badge ao lado de "Carrinho" */
+.badge-carrinho {
+    background-color: #ff0000; /* Cor de fundo vermelha para destaque */
+    color: #fff; /* Texto branco */
+    font-size: 0.8rem; /* Ajuste do tamanho */
+    font-weight: bold;
+    min-width: 20px;
+    height: 20px;
+    padding: 2px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px; /* Mantém o badge arredondado */
+    margin-left: 5px; /* Espaçamento entre "Carrinho" e o número */
+}
+
+/* Esconde o badge quando não há itens */
+.badge-carrinho:empty {
+    display: none;
+}
+
+/* Barra de rolagem personalizada */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007BFF;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
 }

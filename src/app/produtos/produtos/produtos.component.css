@@ -6,6 +6,7 @@
     padding: 20px;
     justify-items: center; /* Centraliza os itens dentro da grid */
     background-color: #f7f7f7; /* Cor de fundo suave */
+    padding-top: 100px;
 }
 
 /* Estilo de cada cartão de produto */

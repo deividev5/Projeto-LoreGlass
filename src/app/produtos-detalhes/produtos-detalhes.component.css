@@ -1,0 +1,98 @@
+/* Container do produto */
+.product__container {
+    display: flex;
+    flex-direction: row; /* Alinha os itens horizontalmente */
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px; /* Limita a largura do cartão */
+    margin: 90px auto 0; /* Adiciona uma margem superior de 20px */
+    padding-top: 100px;
+   
+}
+
+/* Caso o header tenha uma classe específica, adicione isso no body ou no elemento pai */
+body {
+    padding-top: 80px; /* Ajuste de distância com base na altura do header */
+}
+
+/* Container da imagem do produto */
+.product-image__container {
+    flex: 1;
+    max-width: 300px;
+}
+
+.product-image__container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Container da descrição do produto */
+.product-description__container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Nome do produto */
+.product_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Preço do produto */
+.product__price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #007BFF; /* Azul para o preço */
+    margin: 5px 0;
+}
+
+/* Estoque disponível */
+.product__avaiability {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Estilo para a quantidade de unidades */
+label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão de adicionar ao carrinho */
+button {
+    background-color: #007BFF; /* Azul */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Efeito de hover no botão de compra */
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro quando o mouse passa sobre o botão */
+}
