@@ -19,7 +19,7 @@ export const produtos: IProdutos[] =[
         preco: 200.99,
         descricaoPreco: 'à vista',
         quantidadeEstoque: 10,
-        imagem: "../assets/oculos-1.jpg" 
+        imagem: "./assets/oculos-1.jpg" 
       },
       {
         id: 2,
@@ -27,7 +27,7 @@ export const produtos: IProdutos[] =[
         preco: 249.99,
         descricaoPreco: 'à vista',
         quantidadeEstoque: 10,
-        imagem: '../assets/oculos-2.webp' 
+        imagem: './assets/oculos-2.webp' 
       },
       {
         id: 3,
@@ -35,7 +35,7 @@ export const produtos: IProdutos[] =[
         preco: 150.00,
         descricaoPreco: 'à vista',
         quantidadeEstoque: 10,
-        imagem: "../assets/oculos-3.png" 
+        imagem: "./assets/oculos-3.png" 
       },
       {
         id: 4,
@@ -43,7 +43,7 @@ export const produtos: IProdutos[] =[
         preco: 180.00,
         descricaoPreco: 'à vista',
         quantidadeEstoque: 10,
-        imagem: '../assets/oculos-4.png' 
+        imagem: './assets/oculos-4.png' 
       },
       {
         id: 5,
@@ -51,7 +51,7 @@ export const produtos: IProdutos[] =[
         preco: 220.00,
         descricaoPreco: 'à vista',
         quantidadeEstoque: 10,
-        imagem: '../assets/oculos-5.webp' 
+        imagem: './assets/oculos-5.webp' 
       },
       {
         id: 6,
@@ -59,7 +59,7 @@ export const produtos: IProdutos[] =[
         preco: 199.00,
         descricaoPreco: 'à vista',
         quantidadeEstoque: 10,
-        imagem: '../assets/oculos-6.webp' 
+        imagem: './assets/oculos-6.webp' 
       },
       {
         id: 7,
@@ -67,7 +67,7 @@ export const produtos: IProdutos[] =[
         preco: 250.00,
         descricaoPreco: 'à vista',
         quantidadeEstoque: 10,
-        imagem: '../assets/oculos-7.webp' 
+        imagem: './assets/oculos-7.webp' 
       },
       {
         id: 8,
@@ -75,7 +75,7 @@ export const produtos: IProdutos[] =[
         preco: 120.00,
         descricaoPreco: 'à vista',
         quantidadeEstoque: 10,
-        imagem: '../assets/oculos-8.jpg' 
+        imagem: './assets/oculos-8.jpg' 
       },
       {
         id: 9,
@@ -83,7 +83,7 @@ export const produtos: IProdutos[] =[
         preco: 270.00,
         descricaoPreco: 'à vista',
         quantidadeEstoque: 10,
-        imagem: '../assets/oculos-9.png' 
+        imagem: './assets/oculos-9.png' 
       },
       {
         id: 10,
@@ -91,6 +91,6 @@ export const produtos: IProdutos[] =[
         preco: 300.00,
         descricaoPreco: 'à vista',
         quantidadeEstoque: 10,
-        imagem: '../assets/oculos-10.webp' 
+        imagem: './assets/oculos-10.webp' 
       }
     ]
