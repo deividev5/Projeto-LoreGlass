@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/Projeto-LoreGlass",
+            "outputPath": "dist/Primeiro_projeto",
             "baseHref": "/Projeto-LoreGlass/",
             "index": "src/index.html",
             "browser": "src/main.ts",
