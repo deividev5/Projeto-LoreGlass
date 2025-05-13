@@ -1,27 +1,65 @@
-# PrimeiroProjeto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
 
-## Development server
+````markdown
+# Projeto LoreGlass 🌐
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este é um projeto de site desenvolvido com Angular e hospedado gratuitamente no [GitHub Pages](https://deividev5.github.io/Projeto-LoreGlass/).
 
-## Code scaffolding
+## 🧾 Descrição
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O LoreGlass é uma aplicação web que apresenta um layout moderno com seções como:
+- Página inicial
+- Página de produtos
+- Página de contato com formulário funcional
+- Rodapé com informações e redes sociais
+- Página 404 personalizada
 
-## Build
+## 🚀 Tecnologias utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Angular 17](https://angular.io/)
+- HTML5 + CSS3 
+- Git + GitHub Pages para deploy
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠️ Como rodar localmente
 
-## Running end-to-end tests
+1. Clone o repositório:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+git clone https://github.com/deividev5/Projeto-LoreGlass.git
+cd Projeto-LoreGlass
+````
 
-## Further help
+2. Instale as dependências:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install
+```
+
+3. Execute o servidor local:
+
+```bash
+ng serve
+```
+
+4. Acesse: `http://localhost:4200/`
+
+
+
+## 📂 Estrutura de diretórios
+
+```
+src/
+├── app/             # Componentes e páginas
+├── assets/          # Imagens e outros arquivos estáticos
+└── styles.css       # CSS global
+```
+
+## 🧑‍💻 Autor
+
+* **DeiviDev5** - [GitHub](https://github.com/deividev5)
+
+---
+
+📝 Sinta-se livre para contribuir, sugerir melhorias ou relatar problemas.
+
